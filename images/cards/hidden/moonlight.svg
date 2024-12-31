@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="120" height="180" rx="10" fill="#000033"/>
+    
+    <!-- 月光效果 -->
+    <circle cx="60" cy="90" r="30" fill="#E6E6FA" opacity="0.8"/>
+    <circle cx="70" cy="80" r="25" fill="#000033"/>
+    
+    <!-- 星星 -->
+    <circle cx="30" cy="50" r="1" fill="white"/>
+    <circle cx="90" cy="40" r="1" fill="white"/>
+    <circle cx="85" cy="120" r="1" fill="white"/>
+    <circle cx="40" cy="130" r="1" fill="white"/>
+    
+    <!-- 光芒 -->
+    <path d="M60 50 L60 40" stroke="#E6E6FA" stroke-width="1"/>
+    <path d="M60 130 L60 140" stroke="#E6E6FA" stroke-width="1"/>
+    <path d="M30 90 L20 90" stroke="#E6E6FA" stroke-width="1"/>
+    <path d="M100 90 L90 90" stroke="#E6E6FA" stroke-width="1"/>
+    
+    <!-- 文字 -->
+    <text x="60" y="170" text-anchor="middle" fill="#E6E6FA" font-size="14" font-family="Arial">明月光</text>
+</svg>

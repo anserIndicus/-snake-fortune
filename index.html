@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025蛇年运势抽卡</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>2025蛇年运势抽卡</h1>
+        </header>
+        
+        <div class="fortune-steps">
+            <div class="step-section" id="step1">
+                <h2>第一步：求运提问</h2>
+                <div class="fortune-input">
+                    <input type="text" id="question" placeholder="2025蛇年我的整体运势如何？">
+                    <button id="next-step1">下一步</button>
+                </div>
+            </div>
+
+            <div class="step-section" id="step2" style="display: none;">
+                <h2>第二步：选择灵蛇卡</h2>
+                <div class="card-section">
+                    <div id="visible-cards" class="cards-container"></div>
+                </div>
+                <div class="step-buttons">
+                    <button id="prev-step2">上一步</button>
+                    <button id="next-step2">下一步</button>
+                </div>
+            </div>
+            
+            <div class="step-section" id="step3" style="display: none;">
+                <h2>第三步：选择幸运卡</h2>
+                <p class="instruction-text">点击卡片选中或取消选中，选择完成后点击"完成选择"按钮查看结果</p>
+                <div class="card-section">
+                    <div id="hidden-cards" class="cards-container"></div>
+                </div>
+                <div class="step-buttons">
+                    <button id="prev-step3">上一步</button>
+                    <button id="submit-fortune">完成选择</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result" class="result-section" style="display: none;">
+            <div class="fortune-score">
+                <h2>运势分数：<span id="score"></span></h2>
+                <h3>运势等级：<span id="level"></span></h3>
+            </div>
+            
+            <div class="fortune-cards">
+                <div class="selected-cards"></div>
+            </div>
+            
+            <div class="fortune-text">
+                <h3>签文</h3>
+                <p id="fortune-message"></p>
+            </div>
+
+            <div class="action-buttons">
+                <button id="share-interpretation">分享得解签</button>
+                <button id="share-wallpaper">分享得桌面</button>
+                <button id="retry-fortune">再测一次</button>
+            </div>
+        </div>
+    </div>
+    <script src="cards.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

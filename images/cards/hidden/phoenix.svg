@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="120" height="180" rx="10" fill="#FFE4E1"/>
+    
+    <!-- 凤凰主体 -->
+    <path d="M40 90 C50 70, 70 70, 80 90 C90 110, 70 130, 60 120 C50 130, 30 110, 40 90" 
+          stroke="#FF4500" stroke-width="2" fill="#FFB6C1"/>
+    
+    <!-- 凤凰头部 -->
+    <path d="M75 85 C80 80, 85 80, 85 85 L80 90 Z" fill="#FF4500"/>
+    
+    <!-- 凤凰尾羽 -->
+    <path d="M60 120 C65 130, 70 140, 75 145" stroke="#FF4500" stroke-width="2" fill="none"/>
+    <path d="M60 120 C55 130, 50 140, 45 145" stroke="#FF4500" stroke-width="2" fill="none"/>
+    
+    <!-- 装饰性火焰 -->
+    <path d="M40 60 Q60 40 80 60" stroke="#FF6347" stroke-width="1" fill="none"/>
+    <path d="M40 120 Q60 140 80 120" stroke="#FF6347" stroke-width="1" fill="none"/>
+    
+    <!-- 文字 -->
+    <text x="60" y="170" text-anchor="middle" fill="#FF4500" font-size="14" font-family="Arial">百鸟朝凤</text>
+</svg>

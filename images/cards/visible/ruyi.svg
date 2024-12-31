@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="450" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fff0f5;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ffe4e1;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="rubyEffect">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="1" dy="1" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.5"/>
+            </feComponentTransfer>
+            <feMerge> 
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- 祥云纹样 -->
+        <pattern id="cloudPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M25,60 C10,60 0,50 0,35 C0,20 10,10 25,10 C30,0 40,0 50,5 C60,0 70,0 75,10 C90,10 100,20 100,35 C100,50 90,60 75,60 C70,70 60,70 50,65 C40,70 30,70 25,60"
+                  fill="#e60012" fill-opacity="0.1"/>
+        </pattern>
+    </defs>
+    
+    <!-- 卡片背景 -->
+    <rect width="100%" height="100%" fill="url(#bgGradient)" rx="15"/>
+    
+    <!-- 装饰边框 -->
+    <rect x="10" y="10" width="280" height="430" fill="none" 
+          stroke="#e60012" stroke-width="2" rx="15"/>
+    
+    <!-- 标题区域 -->
+    <text x="150" y="50" font-family="Microsoft YaHei" font-size="24" 
+          fill="#e60012" text-anchor="middle" font-weight="bold">如意</text>
+    
+    <!-- 祥云背景 -->
+    <rect x="0" y="100" width="300" height="300" fill="url(#cloudPattern)"/>
+    
+    <!-- 主图：如意 -->
+    <g transform="translate(150,240)" filter="url(#rubyEffect)">
+        <!-- 如意主体 -->
+        <path d="M-60,40 C-40,20 -20,0 0,-20 C20,-40 40,-40 60,-20 C80,0 60,20 40,40"
+              fill="none" stroke="#e60012" stroke-width="15" stroke-linecap="round"/>
+        
+        <!-- 如意头部装饰 -->
+        <g transform="translate(60,-20)">
+            <circle cx="0" cy="0" r="15" fill="#e60012"/>
+            <path d="M-10,-10 L10,10 M-10,10 L10,-10" 
+                  stroke="#fff" stroke-width="3"/>
+        </g>
+        
+        <!-- 如意柄部装饰 -->
+        <g transform="translate(-60,40)">
+            <rect x="-10" y="-10" width="20" height="20" 
+                  fill="#e60012" transform="rotate(45)"/>
+            <circle cx="0" cy="0" r="5" fill="#fff"/>
+        </g>
+        
+        <!-- 装饰纹样 -->
+        <path d="M-40,30 C-20,10 0,-10 20,-30" 
+              stroke="#ff6b81" stroke-width="2" stroke-dasharray="4,4"/>
+        <path d="M-20,40 C0,20 20,0 40,-20" 
+              stroke="#ff6b81" stroke-width="2" stroke-dasharray="4,4"/>
+    </g>
+    
+    <!-- 祥云装饰 -->
+    <g transform="translate(150,180)">
+        <path d="M-100,0 C-80,-20 -60,-20 -40,0 C-20,20 0,20 20,0 C40,-20 60,-20 80,0"
+              fill="none" stroke="#e60012" stroke-width="2" opacity="0.3"/>
+    </g>
+    
+    <!-- 描述文字 -->
+    <text x="150" y="400" font-family="Microsoft YaHei" font-size="14" 
+          fill="#666" text-anchor="middle">象征心愿顺利实现</text>
+    <text x="150" y="420" font-family="Microsoft YaHei" font-size="14" 
+          fill="#666" text-anchor="middle">代表吉祥如意</text>
+</svg>

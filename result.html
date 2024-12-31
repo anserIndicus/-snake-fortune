@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025蛇年运势 - 抽签结果</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container result-page">
+        <header>
+            <h1>2025蛇年运势</h1>
+            <div class="subtitle">抽签结果</div>
+        </header>
+
+        <main>
+            <div class="fortune-result">
+                <div class="question-section">
+                    <h2>您的问题</h2>
+                    <p id="question-text"></p>
+                </div>
+
+                <div class="score-section">
+                    <div class="score-display">
+                        <span id="score"></span>
+                        <span class="score-label">运势分数</span>
+                    </div>
+                    <div class="level-display">
+                        <span id="level"></span>
+                        <span class="level-label">运势等级</span>
+                    </div>
+                </div>
+
+                <div class="fortune-message">
+                    <p id="fortune-message"></p>
+                </div>
+
+                <div class="selected-cards">
+                    <div class="visible-card-section">
+                        <h3>您选择的灵蛇卡</h3>
+                        <div id="selected-visible-card"></div>
+                    </div>
+                    <div class="hidden-cards-section">
+                        <h3>您的幸运卡组合</h3>
+                        <div id="selected-hidden-cards"></div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="share-btn" class="action-button">分享我的运势</button>
+                    <button id="wallpaper-btn" class="action-button">生成运势壁纸</button>
+                    <button id="retry-btn" class="action-button">重新抽签</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="cards.js"></script>
+    <script src="result.js"></script>
+</body>
+</html>

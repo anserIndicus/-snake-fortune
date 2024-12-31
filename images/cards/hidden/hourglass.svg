@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="120" height="180" rx="10" fill="#FFF8DC"/>
+    
+    <!-- 沙漏外框 -->
+    <path d="M40 50 L80 50 L60 90 L80 130 L40 130 L60 90 Z" stroke="#B8860B" stroke-width="3" fill="none"/>
+    
+    <!-- 上部分沙子 -->
+    <path d="M42 52 L78 52 L60 85 Z" fill="#DAA520" opacity="0.7"/>
+    
+    <!-- 下部分沙子 -->
+    <path d="M60 95 L78 128 L42 128 Z" fill="#DAA520"/>
+    
+    <!-- 装饰性花纹 -->
+    <circle cx="60" cy="30" r="15" stroke="#B8860B" stroke-width="2" fill="none"/>
+    <circle cx="60" cy="150" r="15" stroke="#B8860B" stroke-width="2" fill="none"/>
+    
+    <!-- 文字 -->
+    <text x="60" y="170" text-anchor="middle" fill="#B8860B" font-size="14" font-family="Arial">沙漏</text>
+</svg>
